@@ -1,7 +1,6 @@
 {
   "name": "errmsg",
   "description": "A simple, generic tool for creating (error) messages",
-  "version": "0.0.0",
   "dependencies": {
     "lodash.partial": "^4.0.0"
   },
@@ -11,7 +10,8 @@
     "pretest": "npm run lint && npm run inspect",
     "test": "ava",
     "test-cov": "nyc ava",
-    "posttest-cov": ""
+    "posttest-cov": "",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "publishConfig": {
     "registry": "http://registry.npmjs.org"
@@ -22,17 +22,28 @@
     "ava": "^0.11.0",
     "jsinspect": "^0.7.0",
     "nyc": "^5.5.0",
-    "xo": "^0.12.1"
+    "xo": "^0.12.1",
+    "semantic-release": "^4.3.5"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:forivall/errmsg.git"
+    "url": "https://github.com/forivall/errmsg.git"
   },
   "xo": {
     "space": 2,
     "rules": {
-      "curly": [2, "multi-line", "consistent"],
-      "brace-style": [2, "1tbs", {"allowSingleLine": true}]
+      "curly": [
+        2,
+        "multi-line",
+        "consistent"
+      ],
+      "brace-style": [
+        2,
+        "1tbs",
+        {
+          "allowSingleLine": true
+        }
+      ]
     },
     "overrides": [
       {
