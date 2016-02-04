@@ -24,7 +24,7 @@ test('customFormatter bind', t => {
   t.is(errmsgId('$1 $2', 'Hello', 'World'), 'Hello World')
 })
 
-test('customFormatter bind', t => {
+test('lookup', t => {
   const MESSAGES = {
     lipsum: '$1 $2 dolor sit amet.'
   }
@@ -32,7 +32,7 @@ test('customFormatter bind', t => {
   t.is(errmsgs('lipsum', 'Lorem', 'Ipsum'), '"Lorem" "Ipsum" dolor sit amet.')
 })
 
-test('customFormatter bind', t => {
+test('customFormatterLookup', t => {
   function id(v) {return v}
   const MESSAGES = {
     lipsum: '$1 $2 dolor sit amet.'
