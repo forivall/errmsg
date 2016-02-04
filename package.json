@@ -1,6 +1,6 @@
 {
-  "name": "$NAME",
-  "description": "$DESCRIPTION",
+  "name": "errmsg",
+  "description": "A simple, generic tool for creating (error) messages",
   "version": "0.0.0",
   "dependencies": {},
   "scripts": {

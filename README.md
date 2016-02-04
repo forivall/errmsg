@@ -1,6 +1,6 @@
-# $NAME
+# errmsg
 
-$DESCRIPTION
+A simple, generic tool for creating (error) messages
 
 [![build status](https://secure.travis-ci.org/forivall/errmsg.svg)](http://travis-ci.org/forivall/errmsg)
 [![dependency status](https://david-dm.org/forivall/errmsg.svg)](https://david-dm.org/forivall/errmsg)
