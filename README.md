@@ -37,6 +37,7 @@ console.log(errmsgsId("lipsum", "Lorem", "Ipsum"));
 
 ## Credits
 [Jordan Klassen](https://github.com/forivall/)
+[Sebastian McKenzie](https://github.com/kittens/) - based on babel-messages
 
 ## License
 
