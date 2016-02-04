@@ -14,7 +14,7 @@ npm install --save errmsg
 
 ## Usage
 
-```
+```js
 var errmsg = require('errmsg')
 var partial = require('lodash.partial')
 console.log(errmsg("$1 $2", "Hello", "World")) // "Hello" "World"
@@ -37,6 +37,7 @@ console.log(errmsgsId("lipsum", "Lorem", "Ipsum"));
 
 ## Credits
 [Jordan Klassen](https://github.com/forivall/)
+
 [Sebastian McKenzie](https://github.com/kittens/) - based on babel-messages
 
 ## License
