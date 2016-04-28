@@ -30,7 +30,7 @@ function errmsgCustomFormatter(formatter, message) {
 
 function errmsgCustomLookup(formatter, map, key) {
   var msg = map[key];
-  if (!msg) throw new ReferenceError(`Unknown message key ${JSON.stringify(key)}`);
+  if (!msg) throw new ReferenceError('Unknown message key ' + JSON.stringify(key));
 
   var alen = arguments.length;
   var args = [formatter, msg];
