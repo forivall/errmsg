@@ -1,10 +1,10 @@
 'use strict';
 
-const util = require('util');
+var util = require('util');
 
-const partial = require('lodash.partial');
+var partial = require('lodash.partial');
 
-const placeholderRe = /\$(\d+)/g;
+var placeholderRe = /\$(\d+)/g;
 
 function stringifyDammit(val) {
   try {
@@ -16,7 +16,8 @@ function stringifyDammit(val) {
 
 function errmsgCustomFormatter(formatter, message) {
   var alen = arguments.length;
-  var args = []; for (var i = 2; i < alen; i++) args.push(arguments[i]);
+  var args = [];
+  for (var i = 2; i < alen; i++) args.push(arguments[i]);
 
   // stringify args
   args = args.map(formatter);
@@ -32,7 +33,9 @@ function errmsgCustomLookup(formatter, map, key) {
   if (!msg) throw new ReferenceError(`Unknown message key ${JSON.stringify(key)}`);
 
   var alen = arguments.length;
-  var args = [formatter, msg]; for (var i = 3; i < alen; i++) args.push(arguments[i]);
+  var args = [formatter, msg];
+  for (var i = 3; i < alen; i++) args.push(arguments[i]);
+
   return errmsgCustomFormatter.apply(null, args);
 }
 
